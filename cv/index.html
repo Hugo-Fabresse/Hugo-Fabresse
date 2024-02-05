@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Fabressse | cv</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../my_site.css">
+</head>
+<body>
+
+    <nav id="nav-bar">
+        <div id="menu">
+            <div id="name_case">
+                <p id="name">
+                    <strong>
+                        Hugo FABRESSE
+                    </strong>
+                </p>
+            </div>
+            <div id="pages">
+                <div class="elements home" id="home">
+                    <span class="first-letter">h</span>ome
+                    <div class="lignes"></div>
+                </div>
+                <div class="elements portfolio" id="portfolio">
+                    <span class="first-letter">p</span>ortfolio
+                    <div class="lignes"></div>
+                </div>
+                <div class="elements cv" id="cv">
+                    <span class="first-letter">c</span>v
+                    <div class="lignes"></div>
+                </div>
+                <div class="elements autre" id="autre">
+                    <span class="first-letter">a</span>utre
+                    <div class="lignes"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="cv_page">
+        <div id="div_img_cv">
+            <img id="image_cv" src="../images/cv_hugo_fabresse.png" alt="CV Hugo Fabresse">
+        </div>
+        <a id="download_cv" href="../pdf/CV_HugoFabresse_Stage.pdf" download="CV_HugoFabresse_Stage.pdf">
+            <button id="cv_button"><strong>Télécharger le CV</strong></button>
+        </a>
+    </div>
+    <script>
+        window.addEventListener('load', (event) => {
+            const votreDiv = document.getElementById('cv_page');
+            votreDiv.style.animation = 'load_animation 0.75s ease-in-out';
+            const cv = document.getElementById('cv');
+            cv.style.animation = 'load_anim_background 0.75s ease-in-out';
+            cv.style.backgroundColor = 'rgb(35, 134, 54)';
+        });
+    </script>
+    <script src="../my_site.js"></script>
+</body>
+</html>
